@@ -1,3 +1,21 @@
+@import './../../styles/mixins.less';
+
 .page1 {
-  text-align: center;
+  .vertical_center();
+  height: 100vh;
+
+  .home_items {
+    .horizontal_center();
+
+    h1 {
+      font-size: 5rem;
+      font-weight: normal;
+      margin-top: 24px;
+      text-align: center;
+
+      .bold {
+        font-weight: bold;
+      }
+    }
+  }
 }
