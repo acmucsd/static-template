@@ -13,7 +13,8 @@ $ yarn start
 ```
 
 ## Technologies
-- JavaScript Framework: **React**
+- Language: **TypeScript**
+- Framework: **React**
 - CSS Preprocessor: **Less** 
 - Boilerplate: **create-react-app**
 
