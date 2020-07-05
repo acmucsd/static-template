@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./styles/style.less";
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Page1 from "pages/page1/";
+import Home from "pages/Home";
 import Standard from 'pages/Standard';
 import Contact from "components/Contact";
 
@@ -13,9 +13,7 @@ const App: React.FC = () => {
       <div className="App">
         <Switch>
           <Route path="/" exact>
-            <div className="pages">
-              <Page1 />
-            </div>
+            <Home />
           </Route>
           <Route path="/standard" exact>
             <Standard />

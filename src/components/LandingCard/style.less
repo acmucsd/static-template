@@ -1,0 +1,34 @@
+@import './../../styles/base.less';
+
+.LandingCard {
+  color: @white;
+  .backdrop-wrapper {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    .backdrop {
+      max-height: 100vh;
+    }
+  }
+  .landing-text {
+    position: absolute;
+    display: inline;
+    left: 50%;
+    top: 50% - 10rem;
+    color: @white;
+  }
+  .landing-title {
+    font-weight: 900;
+  }
+  .landing-slogan {
+    font-size: 1.5rem;
+  }
+  .arrow {
+    position: absolute;
+    bottom: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
