@@ -3,8 +3,9 @@ import ReactDOM from "react-dom";
 import "./styles/style.less";
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Page1 from "./pages/page1/";
-import Contact from "./components/Contact";
+import Page1 from "pages/page1/";
+import Standard from 'pages/Standard';
+import Contact from "components/Contact";
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,9 @@ const App: React.FC = () => {
             <div className="pages">
               <Page1 />
             </div>
+          </Route>
+          <Route path="/standard" exact>
+            <Standard />
           </Route>
         </Switch>
         <Contact />
