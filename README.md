@@ -8,9 +8,18 @@ $ git clone https://github.com/acmucsd/static-template
 $ cd static-template
 $ curl -o- -L https://yarnpkg.com/install.sh | bash
 # Install the package dependencies
-$ yarn
-$ yarn start
+$ npm install
+# start the website
+$ npm start
 ```
+
+## Configuring for your community
+
+Make sure you see config-overrides.js and src/configs/index.ts and make all necessary changes to fit your community!
+
+This includes primary colors, logos, links etc.
+
+
 
 ## Technologies
 - Language: **TypeScript**
@@ -19,7 +28,7 @@ $ yarn start
 - Boilerplate: **create-react-app**
 
 ## To-do
-- [ ] Add react-router
+- [ x ] Add react-router
 - [ ] Add airbnb lint for ts
 - [ ] Add separate repo w/redux
 - [ ] Add more ACM assets (eg. logo/diamonds/shapes)
