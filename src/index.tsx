@@ -4,6 +4,7 @@ import "./styles/style.less";
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Page1 from "./pages/page1/";
+import Contact from "./components/Contact";
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
             </div>
           </Route>
         </Switch>
+        <Contact />
       </div>
     </Router>
   );
