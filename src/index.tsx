@@ -1,16 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/style.less";
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Page1 from "./pages/page1/";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <div className="pages">
-        <Page1 />
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/" exact>
+            <div className="pages">
+              <Page1 />
+            </div>
+          </Route>
+        </Switch>
       </div>
-    </div>
+    </Router>
   );
 };
 
