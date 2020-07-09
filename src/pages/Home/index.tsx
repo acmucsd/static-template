@@ -1,5 +1,6 @@
 import React from 'react';
 import LandingCard from 'components/LandingCard';
+import EventList from 'components/Events/List';
 import './style.less';
 
 const Home: React.FC = () => {
@@ -10,6 +11,7 @@ const Home: React.FC = () => {
         <h2>Content</h2>
         <p>Who we are!</p>
         <h2>More Content</h2>
+        <EventList />
       </div>
     </div>
   );

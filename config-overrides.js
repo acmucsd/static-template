@@ -4,10 +4,10 @@ module.exports = override(
   addLessLoader({
     javascriptEnabled: true,
     modifyVars: {
-      '@primary-color': '#1DA57A',
-      '@success-color': '#22ACEA',
-      '@text-selection-bg': '#22ACEA',
-      '@link-color': '#22ACEA',
+      '@primary-color': '#e981a0',
+      '@success-color': '#e981a0',
+      '@text-selection-bg': '#e981a0',
+      '@link-color': '#e981a0',
     },
   })
 );

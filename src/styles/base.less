@@ -13,7 +13,10 @@ html {
 @media only screen and (max-width: @md) {
   font-size: 12pt;
 }
-
+*::selection {
+  background-color: @primary-color;
+  color: @white;
+}
 h1 {
   font-size: 4.875rem;
   padding-top: 1rem;
@@ -38,4 +41,8 @@ p {
   font-size: 1rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+a {
+  color: @primary-color;
 }
