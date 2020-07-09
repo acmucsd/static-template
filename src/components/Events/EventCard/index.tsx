@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.less';
 import { EventObject } from 'actions/events';
-import { formatDateToMonthAndDay } from 'utils/date';
+import { formatDateToMonthAndDay, formatDateToTimeWithAMPM } from 'utils/date';
 import { isURL, getAbsoluteURL } from 'utils/url';
-interface EventCardProps {
+
+export type EventCardProps = {
+  /**
+   * Event to display as a card
+   */
   event: EventObject
 }
 
 const EventCard = ({ event }: EventCardProps) => {
-
+  const [timeString, setTimeString] = useState("");
+  useEffect(() => {
+    setTimeString(`${formatDateToTimeWithAMPM(event.start)} - ${formatDateToTimeWithAMPM(event.end)}`);
+  }, [event]);
   return (
     <div className="EventCard">
       <div className="date">
@@ -17,7 +24,10 @@ const EventCard = ({ event }: EventCardProps) => {
       <h1 className="title">
         {event.title}
       </h1>
-      {isURL(event.location) ? <a href={getAbsoluteURL(event.location)}>{event.location}</a> : event.location}
+      <p>{isURL(event.location) ? <a target="_blank" rel="noopener noreferrer" href={getAbsoluteURL(event.location)}>{event.location}</a> : event.location}</p>
+      <div className="time">
+        <p>{timeString}</p>
+      </div>
     </div>
   );
 };

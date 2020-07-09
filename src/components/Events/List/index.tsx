@@ -1,17 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { getAllCommunityEvents, EventObject } from 'actions/events';
+import React from 'react';
+import { EventObject } from 'actions/events';
 import EventCard from '../EventCard';
 import './style.less';
 
-const EventList: React.FC = () => {
-  const [events, setEvents] = useState<Array<EventObject>>([]);
-  useEffect(() => {
-    getAllCommunityEvents().then((events) => {
-      if (events) {
-        setEvents(events);
-      }
-    });
-  }, []);
+export type EventListProps = {
+  events: Array<EventObject>
+}
+const EventList = ({ events }: EventListProps) => {
   return (
     <div className="EventList">
       {events.map((event) => {

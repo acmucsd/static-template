@@ -1,7 +1,6 @@
 import React from 'react';
 import backdrop from "assets/backdrop.png";
 import './style.less';
-import { siteConfigs } from 'configs';
 
 const LandingCard: React.FC = () => {
   return (
