@@ -2,7 +2,6 @@ import React from 'react';
 import leftside from "assets/left_diamonds.svg";
 import rightside from "assets/right_diamonds.svg";
 import './style.less';
-import { siteConfigs } from 'configs';
 
 const LandingCard: React.FC = () => {
   return (
