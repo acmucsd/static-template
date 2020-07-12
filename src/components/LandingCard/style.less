@@ -18,6 +18,10 @@
       overflow: hidden;
       top: 108px;
       position: absolute;
+      @media screen and (max-width: @lg + 550px){
+        left: auto;
+        right: @lg + 50px;
+      }
       @media screen and (max-width: @lg + 100px){
         display: none;
       }
@@ -44,10 +48,7 @@
     margin-top: -5rem;
     color: @white;
     margin-left: 10rem;
-    width: 60vw;
-    @media screen and (max-width: @lg + 100px){
-      width: auto;
-    }
+    width: 100vw;
   }
   .landing-title {
     font-weight: 900;
