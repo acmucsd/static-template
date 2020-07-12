@@ -11,7 +11,7 @@ const Home: React.FC = () => {
       <div className='container'>
         <h2>Content</h2>
         <p>Who we are!</p>
-        <h2>Events <img src={calendar}></img> </h2>
+        <h2>Events <img alt="calendar icon" src={calendar}></img> </h2>
         <p>Participate in fun activities!</p>
         <EventList limit={4}/>
       </div>
