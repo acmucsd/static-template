@@ -1,24 +1,23 @@
 import React from 'react';
-import backdrop from "assets/backdrop.png";
+import leftside from "assets/left_diamonds.svg";
+import rightside from "assets/right_diamonds.svg";
 import './style.less';
-import { siteConfigs } from 'configs';
 
 const LandingCard: React.FC = () => {
   return (
     <div className="LandingCard">
       <div className='backdrop-wrapper'>
-        <img src={backdrop} className='backdrop' alt='backdrop'/>
+        <img src={leftside} className='backdrop-left' alt='backdrop'/>
+        <img src={rightside} className='backdrop-right' alt='backdrop'/>
+        <div className='arrow'>
+          <div>Learn More</div>
+          <div>V</div>
+        </div>
+        <span className='landing-text'>
+          <h1 className="landing-title">ACM Design</h1>
+          <p className='landing-slogan'>slogan</p>
+        </span>
       </div>
-      <div className='landing-text'>
-        <h1 className="landing-title">ACM Design</h1>
-        <p className='landing-slogan'>slogan</p>
-      </div>
-
-      <div className='arrow'>
-        <div>Learn More</div>
-        <div>V</div>
-      </div>
-      
     </div>
   );
 };

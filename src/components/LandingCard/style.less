@@ -2,24 +2,57 @@
 
 .LandingCard {
   color: @white;
+  background-color: @primary-color;
+  overflow: hidden;
   .backdrop-wrapper {
     text-align: center;
     width: 100%;
-    display: inline-block;
-    overflow: hidden;
-    .backdrop {
-      max-height: 100vh;
+    max-height: 100vh;
+    height: 760px;
+    position: relative;
+    display:table;
+    
+    .backdrop-left {
+      z-index: 0;
+      left: -100px;
+      overflow: hidden;
+      top: 108px;
+      position: absolute;
+      @media screen and (max-width: @lg + 550px){
+        left: auto;
+        right: @lg + 50px;
+      }
+      @media screen and (max-width: @lg + 100px){
+        display: none;
+      }
+    }
+    .backdrop-right {
+      z-index: 0;
+      right: 0px;
+      top: -72px;
+      overflow: hidden;
+      position: absolute;
+      @media screen and (max-width: @lg + 100px) {
+        right: -72px;
+      }
+      @media screen and (max-width: @md) { 
+        display: none;
+      }
     }
   }
   .landing-text {
-    position: absolute;
-    display: inline;
-    left: 50%;
-    top: 50% - 10rem;
+    z-index: 1;
+    position: relative;
+    display: table-cell;
+    vertical-align:middle;
+    margin-top: -5rem;
     color: @white;
+    margin-left: 10rem;
+    width: 100vw;
   }
   .landing-title {
     font-weight: 900;
+    margin-top: -90px;
   }
   .landing-slogan {
     font-size: 1.5rem;
