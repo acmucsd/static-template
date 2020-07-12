@@ -14,11 +14,11 @@
     
     .backdrop-left {
       z-index: 0;
-      right: 65vw;
+      left: -100px;
       overflow: hidden;
       top: 108px;
       position: absolute;
-      @media screen and (max-width: @lg){
+      @media screen and (max-width: @lg + 100px){
         display: none;
       }
     }
@@ -28,10 +28,10 @@
       top: -72px;
       overflow: hidden;
       position: absolute;
-      @media screen and (max-width: @lg) {
+      @media screen and (max-width: @lg + 100px) {
         right: -72px;
       }
-      @media screen and (max-width: @sm) { 
+      @media screen and (max-width: @md) { 
         display: none;
       }
     }
@@ -45,7 +45,7 @@
     color: @white;
     margin-left: 10rem;
     width: 60vw;
-    @media screen and (max-width: @lg){
+    @media screen and (max-width: @lg + 100px){
       width: auto;
     }
   }
