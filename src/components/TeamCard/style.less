@@ -1,0 +1,31 @@
+@import './../../styles/base.less';
+
+.TeamCard{
+  background-color:@light-gray;
+  text-align: center;
+  border-radius: 20px;
+  width: 180px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+  margin: 2rem 0;
+  .image {
+      display: block;
+      margin: 0 auto;
+  }
+  .text-container{
+    font-family: 'DM Sans', sans-serif;
+    color:@black;
+    font-weight: bold;
+    .name{
+      font-size: 20px;
+      line-height: 80%;
+    }
+    .role{
+      font-size: 15px;
+    }
+  }
+}
