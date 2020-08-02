@@ -1,20 +1,19 @@
-/**
- * Every .less file should import this
- *
- * Always use multiples of 6px or use REM
- */
+@import './reset.less';
 @import './mixins.less';
 @import './vars.less';
 
 html {
   font-size: 14pt;
+  font-family: 'DM Sans', sans-serif;
+  color: @white;
 }
 @media only screen and (max-width: @md) {
-  font-size: 12pt;
+  html {
+    font-size: 12pt;
+  }
 }
-*::selection {
-  background-color: @primary-color;
-  color: @white;
+body {
+  margin: 0px;
 }
 h1 {
   font-size: 4.875rem;
@@ -40,8 +39,4 @@ p {
   font-size: 1rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-a {
-  color: @primary-color;
 }

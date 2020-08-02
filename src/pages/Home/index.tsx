@@ -2,11 +2,13 @@ import React from 'react';
 import LandingCard from 'components/LandingCard';
 import calendar from 'assets/calendar.svg';
 import EventList from 'containers/Events/EventsListContainer';
+import NavBar from 'components/NavBar';
 import './style.less';
 
 const Home: React.FC = () => {
   return (
     <div className="Home">
+      <NavBar />
       <LandingCard />
       <div className='container'>
         <h2>Content</h2>
