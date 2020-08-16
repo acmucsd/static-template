@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@acmucsd/components": "^1.0.2",
+    "@types/classnames": "^2.2.10",
     "customize-cra": "^0.9.1",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",

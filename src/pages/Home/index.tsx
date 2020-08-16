@@ -5,7 +5,7 @@ import EventList from 'containers/Events/EventsListContainer';
 import NavBar from 'components/NavBar';
 import './style.less';
 
-const Home: React.FC = () => {
+const Home = () => {
   return (
     <div className="Home">
       <NavBar />
