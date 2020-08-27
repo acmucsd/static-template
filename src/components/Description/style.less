@@ -8,10 +8,21 @@
   font-size: 1.5em;
   font-family: 'DM Sans', sans-serif;
 
-  @media screen and (max-width: @sm){
-    font-size: 1.5em;
+  h2{
+    @media screen and (max-width: @md){
+      font-size: calc(2em + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    }
+    img{
+      @media screen and (max-width: @md){
+        width:calc(.8em + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+      }
+    }
   }
-  
+
+  @media screen and (max-width: @md){
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+
   .description-content {
     display: inline-flex;
     align-items: center;
@@ -22,11 +33,14 @@
       width: 55vw - @side-margin;
       padding-right: 5vw;
       font-size: 1em;
+      @media screen and (max-width: @sm){
+        width:100%;
+      }
     }
     .description-image {
       max-width: 40vw - @side-margin;
       max-height: 60vh;
-      @media screen and (max-width: @sm){
+      @media screen and (max-width: @md){
         display: none;
       }
     }
