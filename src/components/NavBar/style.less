@@ -1,0 +1,87 @@
+@import './../../styles/base.less';
+.navbar {
+  list-style-type: none;
+}
+
+.navbar>li {
+  padding: 1em;
+  float: right;
+}
+
+.navbar>li:first-of-type {
+  float: left;
+}
+
+.navbar>li>a {
+  text-decoration: none;
+  color: @black;
+}
+
+.navbar-div {
+  padding: 1em;
+}
+
+.wainbow {
+  width: 100vw;
+  height: 0.5em;
+  display: table;
+  background: @primary-color;
+}
+
+.fixed-nav {
+  position: fixed;
+  font-weight: bold;
+  background-color: @white;
+  z-index: 1;
+}
+
+.navbar-mobile-div {
+  display: none;
+}
+
+@media only screen and (min-width: 650px) {
+  .mobile-links {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .navbar-div {
+    display: none;
+  }
+
+  .navbar-mobile-div {
+    display: block;
+    padding: 1em;
+  }
+
+  .navbar-mobile>button {
+    padding: 1em;
+    float: right;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+
+  .navbar-mobile>a:first-of-type {
+    float: left;
+  }
+
+  .menuicon {
+    height: 1em;
+  }
+
+  .mobile-links {
+    display: none;
+  }
+
+  .mobile-links>a {
+    text-decoration: none;
+    color: @black;
+    display: block;
+    padding: 1em;
+    text-align: center;
+    background-color: @white;
+    font-size: 1.3em;
+  }
+}

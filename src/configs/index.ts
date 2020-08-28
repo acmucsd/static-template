@@ -9,5 +9,6 @@ export const siteConfigs = {
     github: "https://github.com/acmucsd",
     instagram: "https://www.instagram.com/acm.ucsd/",
   },
-  contactEmail: "acmucsd@gmail.com"
+  contactEmail: "acmucsd@gmail.com",
+  committee: ""
 }
