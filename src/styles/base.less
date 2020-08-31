@@ -5,3 +5,43 @@
  */
 @import './mixins.less';
 @import './vars.less';
+@import '~@acmucsd/components/lib/main.css';
+html {
+  font-size: 14pt;
+}
+@media only screen and (max-width: @md) {
+  font-size: 12pt;
+}
+*::selection {
+  background-color: @primary-color;
+  color: @white;
+}
+h1 {
+  font-size: 4.875rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+h2 {
+  font-size: 3.375rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+h3 {
+  font-size: 2.725rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+h4 {
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+p {
+  font-size: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+a {
+  color: @primary-color;
+}
