@@ -1,0 +1,46 @@
+@import './../../styles/base.less';
+@side-margin: 2rem;
+
+.description {
+  padding-top: 3em;
+  font-size: 1.5em;
+  font-family: 'DM Sans', sans-serif;
+
+  h2{
+    @media screen and (max-width: @md){
+      font-size: calc(2em + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    }
+    img{
+      @media screen and (max-width: @md){
+        width:calc(.8em + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+      }
+    }
+  }
+
+  @media screen and (max-width: @md){
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .description-content {
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 1em;
+    justify-content: center;
+
+    .text{
+      width: 55vw - @side-margin;
+      padding-right: 5vw;
+      font-size: 1em;
+      @media screen and (max-width: @sm){
+        width:100%;
+      }
+    }
+    .description-image {
+      max-width: 40vw - @side-margin;
+      max-height: 60vh;
+      @media screen and (max-width: @md){
+        display: none;
+      }
+    }
+  }
+}

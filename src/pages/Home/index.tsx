@@ -1,5 +1,6 @@
 import React from 'react';
 import LandingCard from 'components/LandingCard';
+import Description from 'components/Description';
 import calendar from 'assets/calendar.svg';
 import EventList from 'containers/Events/EventsListContainer';
 import NavBar from 'components/NavBar';
@@ -12,7 +13,7 @@ const Home = () => {
       <NavBar />
       <LandingCard />
       <div className='container'>
-        <h2>Content</h2>
+        <Description />
         <p>Who we are!</p>
         <h2>Events <img alt="calendar icon" src={calendar}></img> </h2>
         <p>Participate in fun activities!</p>
