@@ -11,7 +11,7 @@ const TeamCard: React.FC<Props> = ({pic, member, role}) => {
     <div className="TeamCard">
       <img className="image" src={pic} alt={member}/>
       <div className="text-container">
-        <p className="name"><b>{member}</b></p>
+        <h3 className="name">{member}</h3>
         <p className="role">{role}</p>
       </div>
     </div>
