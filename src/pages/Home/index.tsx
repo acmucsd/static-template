@@ -5,6 +5,7 @@ import calendar from 'assets/calendar.svg';
 import EventList from 'containers/Events/EventsListContainer';
 import NavBar from 'components/NavBar';
 import './style.less';
+import Team from 'components/Team';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <h2>Events <img alt="calendar icon" src={calendar}></img> </h2>
         <p>Participate in fun activities!</p>
         <EventList limit={4}/>
+        <Team/>
       </div>
     </div>
   );
