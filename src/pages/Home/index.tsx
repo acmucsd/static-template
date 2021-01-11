@@ -14,7 +14,6 @@ const Home = () => {
       <LandingCard />
       <div className='container'>
         <Description />
-        <p>Who we are!</p>
         <h2>Events <img alt="calendar icon" src={calendar}></img> </h2>
         <p>Participate in fun activities!</p>
         <EventList limit={4}/>
