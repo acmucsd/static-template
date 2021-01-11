@@ -8,9 +8,9 @@ $ git clone https://github.com/acmucsd/static-template
 $ cd static-template
 $ curl -o- -L https://yarnpkg.com/install.sh | bash
 # Install the package dependencies
-$ npm install
+$ yarn install
 # start the website
-$ npm start
+$ yarn start
 ```
 
 ## Configuring for your community
@@ -19,6 +19,10 @@ Make sure you see config-overrides.js and src/configs/index.ts and make all nece
 
 This includes primary colors, logos, links etc.
 
+### How to Get Updates
+
+Templates are just forks! Follow this [stack overflow](https://stackoverflow.com/questions/56577184/github-pull-changes-from-a-template-repository/56577320) on how to get updates
+
 
 
 ## Technologies
@@ -26,6 +30,7 @@ This includes primary colors, logos, links etc.
 - Framework: **React**
 - CSS Preprocessor: **Less** 
 - Boilerplate: **create-react-app**
+- Icons: **fontawesome**
 
 ## To-do
 - [ x ] Add react-router
