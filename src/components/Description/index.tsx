@@ -11,7 +11,7 @@ const Description: React.FC = () => (
         Ay wassup gamers its jennifer back with another minecraft
         livestream last time we lost our cat fluffy because some one killed
         it we dont know who did it but today we will avenge our fluffy friend
-        first well need one bar of melon ice cream and a bottle of soju mix
+        first well need one bar of melon ice cream and a bottle of water, mix
         them together into a cup and drink it because were going to have a
         wild ride also were going to need a sad playlist because were still
         sad about fluffys death ok i miss you buddy were gonna kill the
