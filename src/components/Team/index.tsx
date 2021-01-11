@@ -6,7 +6,7 @@ import person from "assets/person.svg";
 
 const Team: React.FC = () => {
   return (
-    <div className="Team">
+    <div className="Team" id="team">
       <h2>Our Team <img alt="person" src={person}></img></h2>
       <div className="teamCardContainer">
         <TeamCard member="Emily" role="Supreme Leader" pic={emily}/>
