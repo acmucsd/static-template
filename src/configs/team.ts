@@ -1,6 +1,6 @@
-import emily from "../assets/emily.png"
-import jennifer from "../assets/jennifer.png"
-import ronak from "../assets/ronak.jpg"
+import emily from "../assets/people/emily.png"
+import jennifer from "../assets/people/jennifer.png"
+import ronak from "../assets/people/ronak.jpg"
 
 export const team = [
 	{
