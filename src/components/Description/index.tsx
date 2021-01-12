@@ -5,7 +5,7 @@ import DescriptionImg from '../../assets/description_image.png';
 
 const Description: React.FC = () => (
   <div className="description" id="description">
-    <h2>A Community of Designers <img alt="heart icon" src={heart}></img> </h2>
+    <h2>A Community of Developers <img alt="heart icon" src={heart}></img> </h2>
     <div className="description-content">
       <span className="text">
         Ay wassup gamers its jennifer back with another minecraft
