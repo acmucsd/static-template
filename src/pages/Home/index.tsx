@@ -1,7 +1,6 @@
 import React from 'react';
 import LandingCard from 'components/LandingCard';
 import Description from 'components/Description';
-import calendar from 'assets/calendar.svg';
 import EventList from 'containers/Events/EventsListContainer';
 import NavBar from 'components/NavBar';
 import './style.less';
