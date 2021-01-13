@@ -27,7 +27,8 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
-    "lint:fix": "prettier --write --single-quote \"**/*.{js,jsx}\""
+    "lint:fix": "prettier --write --single-quote \"**/*.{js,jsx}\"",
+    "template:pull-changes": "./pullTemplateChanges.sh"
   },
   "eslintConfig": {
     "extends": "react-app"
