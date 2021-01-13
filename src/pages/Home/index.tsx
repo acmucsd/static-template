@@ -6,6 +6,10 @@ import EventList from 'containers/Events/EventsListContainer';
 import NavBar from 'components/NavBar';
 import './style.less';
 import Team from 'components/Team';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+library.add(faCalendarAlt);
 
 const Home = () => {
   return (
@@ -14,7 +18,7 @@ const Home = () => {
       <LandingCard />
       <div className='container'>
         <Description />
-        <h2>Events <img alt="calendar icon" src={calendar}></img> </h2>
+        <h2>Events <FontAwesomeIcon icon={["fas", "calendar-alt"]}/></h2>
         <p>Participate in fun activities!</p>
         <EventList limit={4}/>
         <Team/>
