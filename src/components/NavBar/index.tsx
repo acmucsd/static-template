@@ -21,6 +21,9 @@ const NavBar: React.FC = () => {
       setMenuState(true);
     }
   };
+  const scrollToTop = (): void => {
+    document.getElementById('top')?.scrollIntoView({ behavior: 'smooth' });
+  };
   const scrollToContacts = (): void => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -35,7 +38,7 @@ const NavBar: React.FC = () => {
       <div className="navbar-div">
         <ul className="navbar">
           <li>
-            <Link to="/">
+            <Link to="/" onClick={scrollToTop}>
               <img src={Logo} alt="Logo" />
             </Link>
           </li>
