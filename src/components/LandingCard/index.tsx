@@ -5,6 +5,7 @@ import './style.less';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import TypistLoop from 'components/TypistLoop';
 library.add(faChevronDown);
 
 const LandingCard: React.FC = () => {
@@ -24,7 +25,19 @@ const LandingCard: React.FC = () => {
         </div>
         <span className="landing-text">
           <h1 className="landing-title">ACM Devs</h1>
-          <p className="landing-slogan">slogan</p>
+          <TypistLoop
+            words={[
+              'This could be your slogan.',
+              'Do you like to code?',
+              'Nah coding takes too much time',
+              'Bruh what are you talking about this IS code',
+              '*life crisis*: wait are we code?',
+              "how can you not realize that we're just lines on a vscode editor?",
+              'dang that hurts',
+              'whatever lets just get back to the regularly scheduled programming',
+              "oh right we're supposed to promote the cool things you can do with this template",
+            ]}
+          />
         </span>
       </div>
     </div>
