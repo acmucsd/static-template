@@ -39,7 +39,7 @@ const handleErrors = (response: Response): Promise < EventsResponse > => {
 export const getAllCommunityEvents = async (limit: number = -1): Promise < EventsArray | undefined > => {
   let eventsRoute = siteConfigs.apiUrl + `/event/future?committee=${siteConfigs.committee}&limit=${limit}`;
   if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    eventsRoute = siteConfigs.apiUrl + `/event/future?committee=${siteConfigs.committee}`;
+    eventsRoute = siteConfigs.apiUrlTesting + `/event/future?committee=${siteConfigs.committee}`;
   }
 
   try {
