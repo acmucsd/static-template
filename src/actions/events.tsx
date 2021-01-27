@@ -37,13 +37,13 @@ const handleErrors = (response: Response): Promise < EventsResponse > => {
 };
 
 export const getAllCommunityEvents = async (limit: number = -1): Promise < EventsArray | undefined > => {
-  let apiurl = `https://acmucsd-membership-portal-api.herokuapp.com/api/v2/event/future?committee=${siteConfigs.committee}&limit=${limit}`;
+  let eventsRoute = siteConfigs.apiUrl + `/event/future?committee=${siteConfigs.committee}&limit=${limit}`;
   if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    apiurl = `https://acmucsd-portal-testing.herokuapp.com/api/v2/event/future?committee=${siteConfigs.committee}`;
+    eventsRoute = siteConfigs.apiUrl + `/event/future?committee=${siteConfigs.committee}`;
   }
 
   try {
-    const response: Response = await fetch(apiurl);
+    const response: Response = await fetch(eventsRoute);
     const result: EventsResponse = await handleErrors(response);
     return result.events.reverse();
   } catch (error) {

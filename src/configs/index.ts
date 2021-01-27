@@ -10,5 +10,6 @@ export const siteConfigs = {
     instagram: "https://www.instagram.com/acm.ucsd/",
   },
   contactEmail: "acmucsd@gmail.com",
-  committee: ""
+  committee: "",
+  apiUrl: 'https://api.acmucsd.com/api/v2',
 }
