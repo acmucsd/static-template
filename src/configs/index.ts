@@ -12,4 +12,5 @@ export const siteConfigs = {
   contactEmail: "acmucsd@gmail.com",
   committee: "",
   apiUrl: 'https://api.acmucsd.com/api/v2',
+  apiUrlTesting: 'https://testing.api.acmucsd.com/api/v2',
 }
